@@ -1,0 +1,7 @@
+{"manifest_version": 3,
+"name": "Library Link Builder",
+"version": "1.0",
+"description": "Generates UofT library booking links",
+"action": {
+    "default_popup": "popup.html"
+}}
