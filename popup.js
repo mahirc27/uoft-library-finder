@@ -35,10 +35,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Database of libraries
     const libraries = [
-        {name: "Robarts Library", path: "Robarts"},
-        {name: "Gerstien Sceince", path: "Gerstein"},
-        {name: "Kelly Library", path: "Kelly"},
-        {name: "OISE", path: "OISE"}
+        {name: "Robarts Library and Commons", path: "robarts"},
+        {name: "Gerstien Science", path: "gerstein"},
+        {name: "OISE", path: "OISE"},
+        {name: "E.J. Pratt Library", path: "ejpratt"},
+        {name: "John M. Kelly Library", path: "kelly"},
+        {name: "Music Library", path: "music"},
+        {name: "University College Library", path: "uclibrary"},
+        {name: "John W. Graham Library", path: "graham"},
+        {name: "Eberhard Zeidler Library", path: "zeidler"},
+        {name: "Industrial Relations Library", path: "IRHRlibrary"},
+        {name: "UTSC Library", path: "utsclibrary"},
+        {name: "UTM Library", path: "utmldel"}
     ];
 
     const baseURL = "https://libcal.library.utoronto.ca/r/search/";
