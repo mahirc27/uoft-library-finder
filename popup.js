@@ -78,11 +78,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const safeStartTime = encodeURIComponent(roundedTime);
             const safeEndTime = encodeURIComponent(roundedEndTime);
             const bookingURL = `${baseURL}${lib.path}?m=t&gid=0&capacity=0&zone=0&date=${selectedDate}&date-end=${selectedDate}&start=${safeStartTime}&end=${safeEndTime}`;
-            finalHTML += `<li><a href ="${bookingURL}" target=_blank>${lib.name}</a></li>`;
+            finalHTML += `<li><a href='#' class="lib-link" data-url="${bookingURL}">${lib.name}</a></li>`;
         }
         finalHTML += '</ul>';
 
         //Updating the results area with the generated HTML
         resultsArea.innerHTML = finalHTML;
+    });
+    resultsArea.addEventListener('click', function(event) {
+        if (event.target && event.target.classList.contains('lib-link')){
+            event.preventDefault();
+
+            const targetUrl = event.target.getAttribute('data-url');
+
+            chrome.tabs.create({
+                url: targetUrl,
+                active: false
+            });
+        }    
     });
 });
