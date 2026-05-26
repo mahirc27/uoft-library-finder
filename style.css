@@ -34,7 +34,7 @@ input[type="time"]:focus {
     border-color: #007aff;
 }
 button {
-    background-color: #007aff;
+    background-color: navy;
     color: white;
     border: none;
     padding: 12px;
@@ -48,7 +48,7 @@ button {
     transition: background-color 0.2s, transform 0.1s;
 }
 button:hover {
-    background-color: #0056b3;
+    background-color: #000030;
 }
 button:active {
     transform: scale(0.96);
@@ -64,14 +64,16 @@ li {
 a {
     display: block;
     text-decoration: none;
-    color: #007aff;
+    color: navy;
     font-weight: 500;
     padding: 10px 12px;
+    background-color: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 8px;
+
     transition: border-color 0.2s, background-color 0.2s;
 }
 a:hover {
-    border-color: #007aff;
-    background-color: #f0f7ff;
+    border-color: navy;
+    background-color: #f5f8fc;
 }

@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //Database of libraries
     const libraries = [
         {name: "Robarts Library and Commons", path: "robarts"},
-        {name: "Gerstien Science", path: "gerstein"},
+        {name: "Gerstein Science", path: "gerstein"},
         {name: "OISE", path: "OISE"},
         {name: "E.J. Pratt Library", path: "ejpratt"},
         {name: "John M. Kelly Library", path: "kelly"},
