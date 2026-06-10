@@ -5,7 +5,7 @@
 "action": {
     "default_popup": "popup.html",
     "default_icon": {
-        "32": "icon_toolbar.png"
+        "128": "icon_toolbar.png"
     }
 },
 "icons": {
